@@ -1,0 +1,31 @@
+name: "3. Semantic Release"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    # inputs:
+    #   dry-run:
+    #     description: 'Modo Dry-Run (não publica)'
+    #     type: boolean
+    #     default: false
+    #   strict-mode:
+    #     description: 'Validar Conventional Commits rigorosamente'
+    #     type: boolean
+    #     default: true
+
+permissions:
+  contents: write       # Permite criar e atualizar tags, commits, releases e pushes
+  issues: write         # Permite ao semantic-release comentar em issues fechadas pela release
+  pull-requests: write  # Permite ao semantic-release comentar nos PRs incluídos na release
+
+jobs:
+  release:
+    uses: heliomarpm/gh-workflows/.github/workflows/cd-release.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      enable-changelog: true
+      #   semantic-release-dry-run: ${{ inputs.dry-run || false }}
+      #   strict-conventional-commits: ${{ inputs.strict-mode != false }}
