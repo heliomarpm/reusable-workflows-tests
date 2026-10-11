@@ -27,5 +27,3 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     with:
       enable-changelog: true
-      #   semantic-release-dry-run: ${{ inputs.dry-run || false }}
-      #   strict-conventional-commits: ${{ inputs.strict-mode != false }}
