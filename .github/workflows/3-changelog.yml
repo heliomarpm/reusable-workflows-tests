@@ -24,6 +24,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📝 Update Changelog
-        uses: heliomarpm/reusable-workflows/actions/changelog@main
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        uses: heliomarpm/gh-workflows/actions/changelog@main
+        # with:
+        #   github-token: ${{ secrets.GITHUB_TOKEN }}
