@@ -10,6 +10,7 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.
 - **ci:** ♻️ renomear e reorganizar workflows de CI ([367dd30](https://github.com/heliomarpm/reusable-workflows-tests/commit/367dd3011406aa45ff8893e1e35b2bac2462fa2a))
 
 ### 🚀 Features
+- new reusable-workflows ([1fe08e1](https://github.com/heliomarpm/reusable-workflows-tests/commit/1fe08e1d6a829e911082ad209160979ef4507123))
 - new reusable-workflows ([ed4d9be](https://github.com/heliomarpm/reusable-workflows-tests/commit/ed4d9be99989b2e0ddc40723abf8e3806eab3ed8))
 - new reusable-workflows ([39255ca](https://github.com/heliomarpm/reusable-workflows-tests/commit/39255cad3d7fc763ddaf6c9596a289537fa3b9ce))
 - **calculator:** ✨ adicionar classe Calculator básica ([9cb065a](https://github.com/heliomarpm/reusable-workflows-tests/commit/9cb065a456e78b583fef13b908815901739e480c))
